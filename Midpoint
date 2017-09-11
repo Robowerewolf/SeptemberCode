@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+void Midpoint (int a, int b, int c, int d);
+
+int main() {
+	int x1, y1, x2, y2;
+	cout << "enter two points" << endl;
+	cin >> x1;
+	cin >> y1;
+	cin >> x2;
+	cin >> y2;
+	Midpoint(x1, y1, x2, y2);
+}
+	void Midpoint(int a, int b, int c, int d) {
+		double temp = a + c;
+		double temp2 = b + d;
+		double bigX = temp / 2;
+		double bigY = temp2 / 2;
+
+
+		cout << bigX << bigY << endl;
+	}
