@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int score;
+int main() {
+	cout << "Enter your KD ratio!!" << endl; 
+		cin >> score;
+
+	if (score < 3)
+		cout << "GIT GUD NOOB!" << endl;
+	else
+		cout << "NIce!! let's play" << endl;
+}
