@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main() {
+
+	int a = 1;
+	int b = 2;
+	int thumb = 0;
+	double fib;
+	thumb=a + b;
+	int carDoor = 0;
+
+	for (fib = 0; fib < 40; fib++) {
+		
+		a = b;
+		b = thumb;
+		thumb = a + b;
+		if (thumb % 2 == 0)
+			carDoor += thumb;
+
+		cout << thumb << endl;
+	}
+	system("pause");
+}
