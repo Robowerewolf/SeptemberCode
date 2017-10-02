@@ -1,0 +1,32 @@
+#include <iostream>
+#include <allegro5/allegro.h>
+#include <allegro5/allegro_primitives.h>
+
+using namespace std;
+
+ALLEGRO_DISPLAY* display = NULL;
+
+int x;
+int y;
+int l;
+int w;
+
+
+int main() {
+	al_init();
+	al_init_primitives_addon();
+	display = al_create_display(640, 900);
+
+	cout << "Give me an x coordinate, a y coordinate, a length, and a width. In that order." << endl;
+	cin >> x;
+	cin >> y;
+	cin >> l;
+	cin >> w;
+
+
+	
+	al_draw_rectangle(x, y, l, w, al_map_rgb(255, 255, 255), 10);
+
+	al_flip_display();
+	al_rest(10);
+}
