@@ -1,0 +1,46 @@
+#include <iostream>
+
+using namespace std;
+
+int x;
+int y;
+float d;
+int s;
+
+int main() {
+	cout << "Put in Two Numders" << endl;
+
+	cin >> x;
+	cin >> y;
+
+	if (x>y)
+
+		s = x - y;
+	if (y > x)
+		s = y - x;
+
+	cout << s << endl;
+
+	if (y == 0)
+		cout << "Against The Rules" << endl;
+	else
+		d = x / y;
+
+	cout << d << endl;
+
+	if (x == 42 || y == 42)
+		cout << "You have 42" << endl;
+
+	if (x % 6 == 0)
+		cout << "Only " << x << endl;
+
+	if (y % 6 == 0)
+		cout << "Only " << y << endl;
+
+	if (x % 6 == 0 && y % 6 == 0)
+		cout << "Both" << endl;
+
+	else
+		cout << "Neither" << endl;
+
+}
